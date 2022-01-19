@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Vollkorn:wght@400;600;900&display=swap");
+header {
+  background-color: chocolate;
+  color: white;
+  display: flex;
+  justify-content: space-between; }
+  header ul {
+    display: flex;
+    justify-content: space-between; }
+    header ul li {
+      list-style: none; }
+      header ul li a {
+        text-decoration: none;
+        margin: 4px; }
+
+p {
+  color: red; }
+
+.container {
+  background-color: yellow; }
+  .container h2 {
+    color: blue;
+    font-family: "Open Sans", sans-serif; }
+    .container h2:hover {
+      color: white; }

@@ -1,0 +1,17 @@
+header {
+	background-color: chocolate;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	ul {
+		display: flex;
+		justify-content: space-between;
+		li {
+			list-style: none;
+			a {
+				text-decoration: none;
+				margin: 4px;
+			}
+		}
+	}
+}

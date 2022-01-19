@@ -1,0 +1,13 @@
+p {
+	color: red;
+}
+.container {
+	background-color: yellow;
+	h2 {
+		color: blue;
+		font-family: $sans-serif;
+		&:hover {
+			color: white;
+		}
+	}
+}
