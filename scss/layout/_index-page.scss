@@ -1,0 +1,48 @@
+.img-background-principal {
+	background-size: cover;
+	background-position: bottom;
+	max-height: 60vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.8);
+}
+.img-background-principal::before {
+	content: 'Growler Beer';
+	position: absolute;
+	color: #ffff;
+	font-size: 5rem;
+}
+.main-section-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 70vh;
+	gap: 1rem;
+}
+
+.content-div-big {
+	margin-top: 1rem;
+	overflow: hidden;
+	animation-duration: 2s;
+}
+.content-div-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	animation-duration: 2s;
+	animation-delay: 3s;
+}
+.content-div-flex-up {
+	padding-top: 1rem;
+}
+.section-content-div {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+}
+.section-content-h1 {
+	font-size: 8rem;
+	animation-delay: 3s;
+	animation-duration: 2s;
+}

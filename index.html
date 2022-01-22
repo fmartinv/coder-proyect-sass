@@ -4,29 +4,111 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- solo se linkea el css, compila solo scss  -->
-		<link rel="stylesheet" href="./css/style.css" />
-		<title>sasstest</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Beercompany🍺</title>
 	</head>
 	<body>
 		<header>
-			<ul>
-				<li><a href="">home</a></li>
-				<li><a href="">kkk</a></li>
-				<li><a href="">productos</a></li>
-				<li><a href="">uncontrol</a></li>
-			</ul>
+			<nav class="">
+				<div class="main__container nav--flex">
+					<div class="logo">
+						<a href="index.html" class="navbar-brand"
+							><img src="asets/beer.png" alt="" srcset="" class="imgLogo"
+						/></a>
+					</div>
+
+					<ul class="social__links">
+						<li class="social__link">
+							<a href=""><i class="fab fa-instagram"></i></a>
+						</li>
+						<li class="social__link">
+							<a href=""><i class="fab fa-facebook"></i></a>
+						</li>
+						<li class="social__link">
+							<a href=""><i class="fab fa-whatsapp"></i></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 		</header>
-		<body>
-			<div class="container">
-				<h2>SASSSSSSSSSSS</h2>
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
-					voluptatem sed provident quas consequatur, possimus perspiciatis modi
-					minus impedit. Voluptatum assumenda deleniti optio ea explicabo culpa
-					nihil autem nam modi.
-				</p>
+		<main class="">
+			<div class="img-background-principal">
+				<img src="asets/factory2b.jpeg" alt="" srcset="" />
 			</div>
-		</body>
+			<nav class="nav--bottom">
+				<ul class="nav__links__bottom">
+					<li class="nav__link"><a href="nosotros.html">Nosotros</a></li>
+					<li class="nav__link"><a href="servicios.html">Servicios</a></li>
+					<li class="nav__link"><a href="productos.html">Productos</a></li>
+					<li class="nav__link"><a href="formulario.html">Contacto</a></li>
+				</ul>
+			</nav>
+
+			<section class="main-section-content main__container">
+				<div class="content-div-big animate__animated animate__fadeInDown">
+					<img src="asets/chopers.jpeg" alt="" srcset="" />
+				</div>
+				<div class="content-div-flex animate__animated animate__fadeInDown">
+					<div class="content-div-flex-up">
+						<img src="asets/beer-glasses.jpeg" alt="" srcset="" />
+					</div>
+					<img src="asets/beer-glasses.jpeg" alt="" srcset="" />
+				</div>
+
+				<div class="section-content-div">
+					<h1 class="section-content-h1 animate__animated animate__fadeInDown">
+						Grow<span class="span_color">ler</span> Beer
+					</h1>
+					<p>
+						La Seleccion natural de nuestra cebada, es el proceso clave de la
+						calidad de nuestra cerveza.
+					</p>
+				</div>
+				<div>
+					<img
+						src="asets/beer-glasses.jpeg"
+						alt=""
+						srcset=""
+						class="animate__animated animate__zoomIn"
+					/>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="main__container footer--flex">
+				<p>Beber con moderación.Prohibida su venta a menores de 18 años.</p>
+
+				<ul class="social__links">
+					<li class="social__link">
+						<a href=""><i class="fab fa-instagram"></i></a>
+					</li>
+					<li class="social__link">
+						<a href=""><i class="fab fa-facebook"></i></a>
+					</li>
+					<li class="social__link">
+						<a href=""><i class="fab fa-whatsapp"></i></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+		<script src="/js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
 	</body>
 </html>

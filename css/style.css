@@ -1,25 +1,383 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Vollkorn:wght@400;600;900&display=swap");
-header {
-  background-color: chocolate;
-  color: white;
+@charset "UTF-8";
+.imgLogo {
+  width: 1.6rem;
+  transition: width 1s; }
+  .imgLogo:hover {
+    width: 2rem; }
+
+.nav--color {
+  background-color: #ffff;
+  padding: 1.4rem; }
+
+.nav--flex {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1.5rem; }
+
+.nav--bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #ffff; }
+
+.nav__links {
+  display: flex;
+  justify-content: space-evenly; }
+
+.nav__links__bottom {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%; }
+
+.nav__link {
+  padding: 1em;
+  color: black; }
+  .nav__link a {
+    color: black;
+    font-size: 1rem; }
+
+.social__links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .social__links a {
+    padding: 1em;
+    color: black; }
+
+i {
+  font-size: 1.3rem; }
+
+.logo img {
+  max-height: 2rem;
+  margin: 4px; }
+
+.footer {
+  max-height: 2rem;
+  margin-top: 3rem;
+  padding: 2rem; }
+
+.footer--flex {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between; }
-  header ul {
+
+.navbar-toggler {
+  background-color: #f3b700; }
+
+.navbar-nav .navbar-expand-lg .nav-link {
+  padding: 2rem;
+  font-size: 1.4rem; }
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  border-bottom: 3px solid black; }
+
+ul.social__links {
+  margin-bottom: 0 !important; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffff; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+img[width] {
+  width: 100%; }
+
+img[width][height] {
+  height: auto; }
+
+.main__container {
+  max-width: 1290px;
+  min-width: 360px;
+  margin: auto; }
+
+.img-background-principal {
+  background-size: cover;
+  background-position: bottom;
+  max-height: 60vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8); }
+
+.img-background-principal::before {
+  content: 'Growler Beer';
+  position: absolute;
+  color: #ffff;
+  font-size: 5rem; }
+
+.main-section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 70vh;
+  gap: 1rem; }
+
+.content-div-big {
+  margin-top: 1rem;
+  overflow: hidden;
+  animation-duration: 2s; }
+
+.content-div-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation-duration: 2s;
+  animation-delay: 3s; }
+
+.content-div-flex-up {
+  padding-top: 1rem; }
+
+.section-content-div {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column; }
+
+.section-content-h1 {
+  font-size: 8rem;
+  animation-delay: 3s;
+  animation-duration: 2s; }
+
+.container__nosotros {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 22% 40%; }
+
+.video__nosotros {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  max-height: 60vh; }
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 80%;
+  margin: auto; }
+
+div.images-nosotros {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1em;
+  margin: 1rem; }
+
+.container__productos {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, auto);
+  gap: 2rem;
+  margin-top: 1.5rem; }
+
+.div__productos {
+  padding: auto;
+  /* overflow: hidden; */ }
+
+.div__productos__title {
+  font-size: 4rem;
+  display: flex;
+  flex-wrap: nowrap; }
+
+.h1-main-products {
+  font-size: 8rem; }
+
+.span_color {
+  color: #f3b700; }
+
+.container__servicios {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 33% 33% 33%;
+  gap: 1rem;
+  margin: 2rem;
+  max-width: 1330px;
+  min-width: 360px;
+  margin: auto; }
+
+.servicios__heigth {
+  min-height: 80vh;
+  margin: 2rem; }
+
+.div__servicios_titulo {
+  background-color: darkgoldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.div__servicios_titulo h2 {
+  font-size: 3rem;
+  font-weight: 700; }
+
+.div_servicios_contenido {
+  background-color: darkgray;
+  padding: 1rem; }
+
+.container__contacto {
+  max-width: 80%;
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+  margin: auto; }
+
+.bg {
+  background-image: url("asets/bence-boros-8T5UAV6KkZA-unsplash.jpeg");
+  height: 100%;
+  /* background-position: bottom; */
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.contacto--h3 {
+  font-size: 3rem;
+  color: #fff; }
+
+.form {
+  display: grid;
+  grid-auto-flow: row;
+  place-items: center; }
+
+.form__div {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+  color: #fff; }
+
+.form__input {
+  padding: 1em;
+  margin: 0.6rem;
+  border-radius: 5px;
+  box-shadow: inset 1px;
+  min-width: 50vw;
+  background-color: beige; }
+
+.form__radio {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  align-items: center;
+  align-content: stretch; }
+
+.radio__input {
+  margin: 1rem; }
+
+.text__area {
+  width: calc(100% - 45px);
+  height: 150px; }
+
+textarea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  resize: vertical; }
+
+@media (max-width: 575px) {
+  .container__servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Escritorio grande */
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .main-section-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem; }
+  .content-div-flex-up {
+    padding-top: 1rem;
+    margin-bottom: 1em; }
+  .section-content-h1 {
+    font-size: 4rem;
+    text-align: center; }
+  .div__productos__title {
+    font-size: 2rem; }
+  .footer--flex {
     display: flex;
-    justify-content: space-between; }
-    header ul li {
-      list-style: none; }
-      header ul li a {
-        text-decoration: none;
-        margin: 4px; }
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem; } }
 
-p {
-  color: red; }
+/* Tablets y phablets */
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  .main-section-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem; }
+  .content-div-flex-up {
+    padding-top: 1rem;
+    margin-bottom: 1em; }
+  .section-content-h1 {
+    font-size: 4rem;
+    text-align: center; }
+  .h1-main-products {
+    font-size: 2rem; } }
 
-.container {
-  background-color: yellow; }
-  .container h2 {
-    color: blue;
-    font-family: "Open Sans", sans-serif; }
-    .container h2:hover {
-      color: white; }
+/* Teléfonos */
+@media (max-width: 575px) {
+  .main-section-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem; }
+  .content-div-flex {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    margin-top: 3rem; }
+  .container__productos {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+    overflow: hidden; }
+  .h1-main-products {
+    font-size: 4rem; }
+  .img-background-principal {
+    max-height: 40vh; }
+  .img-background-principal::before {
+    font-size: 3.5rem; }
+  .main-section-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem; }
+  .content-div-flex-up {
+    padding-top: 1rem;
+    margin-bottom: 1em; }
+  .section-content-h1 {
+    font-size: 4rem;
+    text-align: center; }
+  .div__productos__title {
+    font-size: 1rem; }
+  .footer--flex {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem; } }

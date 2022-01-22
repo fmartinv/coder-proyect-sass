@@ -1,6 +1,7 @@
 //importaciones
 // las importaciones de variables se hacen arriba de todo
 @import './variables/variables';
-// /* Todo archivo que no sea el main, se tiene que llamar con _adelante y la extension scss*/
-@import './utilidades/header';
-@import './utilidades/index';
+@import './components/_base-components';
+@import './layout/base-layout';
+@import './base/base-main';
+@import './media/base-mediaquery';

@@ -1,0 +1,22 @@
+.container__productos {
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: repeat(3, auto);
+	gap: 2rem;
+	margin-top: 1.5rem;
+}
+.div__productos {
+	padding: auto;
+	/* overflow: hidden; */
+}
+.div__productos__title {
+	font-size: 4rem;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.h1-main-products {
+	font-size: 8rem;
+}
+.span_color {
+	color: #f3b700;
+}

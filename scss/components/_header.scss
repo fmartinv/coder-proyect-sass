@@ -1,0 +1,63 @@
+.imgLogo {
+	width: 1.6rem;
+	transition: width 1s;
+	&:hover {
+		width: 2rem;
+	}
+}
+
+.nav--color {
+	background-color: #ffff;
+	padding: 1.4rem;
+}
+.nav--flex {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1.5rem;
+}
+.nav--bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: #ffff;
+}
+.nav__links {
+	display: flex;
+	justify-content: space-evenly;
+}
+.nav__links__bottom {
+	display: flex;
+	justify-content: space-evenly;
+	width: 60%;
+}
+.nav__link {
+	padding: 1em;
+	color: black;
+	a {
+		color: black;
+		font-size: 1rem;
+	}
+}
+
+.social__links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	a {
+		padding: 1em;
+		color: black;
+	}
+}
+
+i {
+	font-size: 1.3rem;
+}
+.logo img {
+	max-height: 2rem;
+	margin: 4px;
+}

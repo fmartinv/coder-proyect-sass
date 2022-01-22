@@ -1,0 +1,25 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #ffff;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+img[width] {
+	width: 100%;
+}
+img[width][height] {
+	height: auto;
+}
+.main__container {
+	max-width: 1290px;
+	min-width: 360px;
+	margin: auto;
+}

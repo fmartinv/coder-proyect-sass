@@ -1,0 +1,29 @@
+.container__nosotros {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 22% 40%;
+}
+
+.video__nosotros {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%;
+	max-height: 60vh;
+}
+iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 80%;
+	height: 80%;
+	margin: auto;
+}
+div.images-nosotros {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 1em;
+	margin: 1rem;
+}

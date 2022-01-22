@@ -1,0 +1,29 @@
+.container__servicios {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	grid-template-rows: 33% 33% 33%;
+	gap: 1rem;
+	margin: 2rem;
+	max-width: 1330px;
+	min-width: 360px;
+	margin: auto;
+}
+.servicios__heigth {
+	min-height: 80vh;
+	margin: 2rem;
+}
+.div__servicios_titulo {
+	background-color: darkgoldenrod;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.div__servicios_titulo h2 {
+	font-size: 3rem;
+	font-weight: 700;
+}
+.div_servicios_contenido {
+	background-color: darkgray;
+	padding: 1rem;
+}
