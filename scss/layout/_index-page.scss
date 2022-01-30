@@ -31,7 +31,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	animation-duration: 2s;
-	animation-delay: 3s;
+	animation-delay: 2s;
 }
 .content-div-flex-up {
 	padding-top: 1rem;
@@ -40,9 +40,13 @@
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
+	h4 {
+		line-height: 2;
+		font-family: $robotoMono;
+	}
 }
 .section-content-h1 {
 	font-size: 8rem;
-	animation-delay: 3s;
+	animation-delay: 2s;
 	animation-duration: 2s;
 }

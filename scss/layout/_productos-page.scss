@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 .container__productos {
 	display: grid;
 	grid-template-columns: repeat(2, 50%);
 	grid-template-rows: repeat(3, auto);
 	gap: 2rem;
 	margin-top: 1.5rem;
+	margin-right: 1rem;
 }
 .div__productos {
 	padding: auto;
-	/* overflow: hidden; */
+	p {
+		font-family: $robotoMono;
+	}
 }
 .div__productos__title {
 	font-size: 4rem;
@@ -19,4 +25,36 @@
 }
 .span_color {
 	color: #f3b700;
+}
+
+//map + each cervezas cards
+
+$backgroundCerveza: (
+	amber: #ddcf0f,
+	porter: #857c7c,
+	ipa: #6e4444,
+	weiser: #b9b962,
+	larger: #f1f18d,
+);
+
+@each $cerveza, $sabor in $backgroundCerveza {
+	.#{$cerveza} {
+		background-color: $sabor;
+		font-weight: 600;
+	}
+	h5 {
+		font-weight: 800;
+		font-family: $quintEssential;
+	}
+}
+
+@media only screen and (min-width: 575px) and (max-width: 838px) {
+	.h1-main-products {
+		font-size: 5rem;
+	}
+}
+@media (max-width: 575px) {
+	.h1-main-products {
+		font-size: 5rem;
+	}
 }

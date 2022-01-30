@@ -1,7 +1,8 @@
 //importaciones
 // las importaciones de variables se hacen arriba de todo
 @import './variables/variables';
-@import './components/_base-components';
+@import './components/base-components';
+@import './components/nav-boostrap';
 @import './layout/base-layout';
 @import './base/base-main';
 @import './media/base-mediaquery';
