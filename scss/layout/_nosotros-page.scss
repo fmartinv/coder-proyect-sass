@@ -10,6 +10,7 @@
 	width: 100%;
 	padding-top: 56.25%;
 	max-height: 60vh;
+	border-radius: 4px;
 }
 iframe {
 	position: absolute;
@@ -34,4 +35,11 @@ div.images-nosotros {
 .nosotros-img {
 	height: 40vh;
 	width: 100%;
+}
+.card {
+	box-shadow: 10px 5px 5px 2px black;
+	border-radius: 5px;
+	.card-body {
+		background-color: rgb(226, 223, 211);
+	}
 }

@@ -243,7 +243,8 @@ img[width][height] {
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%;
-  max-height: 60vh; }
+  max-height: 60vh;
+  border-radius: 4px; }
 
 iframe {
   position: absolute;
@@ -269,6 +270,12 @@ div.images-nosotros {
   height: 40vh;
   width: 100%; }
 
+.card {
+  box-shadow: 10px 5px 5px 2px black;
+  border-radius: 5px; }
+  .card .card-body {
+    background-color: #e2dfd3; }
+
 .container__productos {
   display: grid;
   grid-template-columns: repeat(2, 50%);
@@ -285,7 +292,7 @@ div.images-nosotros {
 .div__productos__title {
   font-size: 4rem;
   display: flex;
-  flex-wrap: nowrap; }
+  flex-wrap: wrap; }
 
 .h1-main-products {
   font-size: 8rem; }
