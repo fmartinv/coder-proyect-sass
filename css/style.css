@@ -380,7 +380,8 @@ h5 {
 .galeria-grid {
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  grid-template-rows: 1fr 1fr; }
+  grid-template-rows: 1fr 1fr;
+  margin-top: 3rem; }
 
 .galeria-grid .img-galeria1 {
   border: 2px solid #333;
@@ -428,8 +429,18 @@ h5 {
     width: 100%;
     margin: 0 auto; }
 
+.galeria-grid .img-galeria6 {
+  border: 2px solid #333;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #e7d10d; }
+  .galeria-grid .img-galeria6 img {
+    width: 100%;
+    margin: 0 auto; }
+
 .galeria-grid .img-galeria7 {
-  border: 2px solid #ebe70f;
+  border: 2px solid #ebe97d;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;

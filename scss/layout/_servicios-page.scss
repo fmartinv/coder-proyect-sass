@@ -31,6 +31,7 @@
 	display: grid;
 	grid-template-columns: repeat(4, 25%);
 	grid-template-rows: 1fr 1fr;
+	margin-top: 3rem;
 }
 @mixin galeria($color) {
 	border: 2px solid $color;
@@ -72,8 +73,15 @@
 		flex-direction: column;
 		background-color: whitesmoke;
 	}
+	.img-galeria6 {
+		@include galeria(#333);
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		background-color: #e7d10d;
+	}
 	.img-galeria7 {
-		@include galeria(#ebe70f);
+		@include galeria(#ebe97d);
 		display: flex;
 		justify-content: flex-end;
 		flex-direction: column;
