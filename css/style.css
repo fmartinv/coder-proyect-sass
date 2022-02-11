@@ -388,7 +388,7 @@ h5 {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  background-color: whitesmoke; }
+  background-color: #e7d10d; }
   .galeria-grid .img-galeria1 img {
     width: 100%;
     margin: 0 auto; }
@@ -404,13 +404,13 @@ h5 {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  background-color: whitesmoke; }
+  background-color: #e7d10d; }
   .galeria-grid .img-galeria3 img {
     width: 100%;
     margin: 0 auto; }
 
 .galeria-grid .img-galeria4 {
-  border: 2px solid #ebe70f;
+  border: 2px solid #333;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -440,7 +440,7 @@ h5 {
     margin: 0 auto; }
 
 .galeria-grid .img-galeria7 {
-  border: 2px solid #ebe97d;
+  border: 2px solid #333;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;

@@ -47,7 +47,7 @@
 		display: flex;
 		justify-content: space-between;
 		flex-direction: column;
-		background-color: whitesmoke;
+		background-color: #e7d10d;
 	}
 	.img-galeria2 {
 		@include galeria(rgb(124, 20, 20));
@@ -57,10 +57,10 @@
 		display: flex;
 		justify-content: space-between;
 		flex-direction: column;
-		background-color: whitesmoke;
+		background-color: #e7d10d;
 	}
 	.img-galeria4 {
-		@include galeria(#ebe70f);
+		@include galeria(#333);
 		display: flex;
 		justify-content: flex-end;
 		flex-direction: column;
@@ -81,7 +81,7 @@
 		background-color: #e7d10d;
 	}
 	.img-galeria7 {
-		@include galeria(#ebe97d);
+		@include galeria(#333);
 		display: flex;
 		justify-content: flex-end;
 		flex-direction: column;
